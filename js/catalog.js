@@ -1,6 +1,7 @@
 /* global Product, Cart */
 
 'use strict';
+var itemCount = document.getElementById('itemCount');
 
 // Set up an empty cart for use on this page.
 var cart = new Cart([]);
@@ -26,7 +27,7 @@ function handleSubmit(event) {
 
   // TODO: Prevent the page from reloading
   event.preventDefault();
-  
+ 
 
   // Do all the things ...
   addSelectedItemToCart();
@@ -44,7 +45,11 @@ function addSelectedItemToCart() {
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
-function updateCounter() {}
+function updateCounter() {
+
+  itemCount.innerHTML = ` ${cart.length} Items`;
+
+}
 
 // TODO: As you add items into the cart, show them (item & quantity) in the cart preview div
 function updateCartPreview() {
