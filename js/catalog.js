@@ -52,7 +52,7 @@ function addSelectedItemToCart() {
   
   // TODO: using those, add one item to the Cart
   // ceate new cartItem using the CartItem constructor function passing in item and quantity
-  cart.items.push(new CartItem(selectedItem, itemQuantity));
+  cart.addItem(selectedItem, itemQuantity);
 }
 
 // TODO: Update the cart count in the header nav with the number of items in the Cart
