@@ -2,6 +2,7 @@
 
 'use strict';
 var itemCount = document.getElementById('itemCount');
+var cartContents = document.getElementById('cartContents');
 
 // Set up an empty cart for use on this page.
 var cart = new Cart([]);
@@ -67,6 +68,9 @@ function updateCounter() {
 function updateCartPreview() {
   // TODO: Get the item and quantity from the form
   // TODO: Add a new element to the cartContents div with that information
+    var divEl = document.createElement('div');
+    divEl.textContent = cart.items[cart.items.length-1].quantity + ' ' + cart.items[cart.items.length-1].product;
+    cartContents.appendChild(divEl);
 }
 
 // Set up the "submit" event listener on the form.
