@@ -1,13 +1,15 @@
 /* global Cart */
 'use strict';
 
+var tbody = document.getElementsByTagName('tbody')[0];
+
 // Create an event listener so that when the delete link is clicked, the removeItemFromCart method is invoked.
 var table = document.getElementById('cart');
 table.addEventListener('click', removeItemFromCart);
 var cart;
 
 function loadCart() {
-  var cartItems = JSON.parse(localStorage.getItem('cart')) || [];
+  var cartItems = JSON.parse(localStorage.getItem('cartStorage')) || [];
   cart = new Cart(cartItems);
 }
 
@@ -19,7 +21,9 @@ function renderCart() {
 }
 
 // TODO: Remove all of the rows (tr) in the cart table (tbody)
-function clearCart() {}
+function clearCart() {
+  tbody = '';
+}
 
 // TODO: Fill in the <tr>'s under the <tbody> for each item in the cart
 function showCart() {
