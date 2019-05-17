@@ -17,8 +17,8 @@ color: black;
 th{ text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(180, 176, 176, .1);
-    font-size: 18px; 
-    
+		font-size: 18px; 
+		text-transform: uppercase;
 }
 
 .copy{
@@ -40,3 +40,12 @@ body{
     background-repeat: no-repeat;
     background-size: 1300px;
 }
+
+table {
+	width: 600px;}
+th, td {
+	padding: 7px 10px 10px 10px;}
+tr.even {
+	background-color: #efefef;}
+tr:hover {
+	background-color: #c3e6e5;}
