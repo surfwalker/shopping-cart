@@ -25,6 +25,7 @@ Cart.prototype.removeItem = function(item) {
 var CartItem = function(product, quantity) {
   this.product = product;
   this.quantity = quantity;
+  console.log('a cart item is being created');
 };
 
 // Product contructor.
