@@ -42,10 +42,16 @@ body{
 }
 
 table {
-	width: 600px;}
+	width: 600px;
+	margin: 0px auto;
+}
 th, td {
 	padding: 7px 10px 10px 10px;}
 tr.even {
 	background-color: #efefef;}
 tr:hover {
 	background-color: #c3e6e5;}
+
+section div {
+	margin-bottom: 20px;
+}
