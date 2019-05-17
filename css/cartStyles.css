@@ -1,10 +1,9 @@
-
 h1{
     font-size: 40px;
     text-align:center;
     color: black;
     padding: 10px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 
 nav{
@@ -13,8 +12,15 @@ font-family: Verdana, Geneva, Tahoma, sans-serif;
 padding:10px;
 font-size: 30px;
 color: black;
-
 }
+
+th{ text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: rgb(180, 176, 176, .1);
+    font-size: 18px; 
+    
+}
+
 .copy{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     background-color: rgb(180, 176, 176, .1);
@@ -22,30 +28,15 @@ color: black;
     border-radius: 20px 20px 20px 20px;
     border-width: 2px;
     display: inline-block;
-    height: 50px;
+    height: 20px;
     border-color: black;
     text-align: center;
-    padding: 10px;
-}
+    padding: 5px; 
+}   
 
-
-body {
+body{
     text-align: center;
     background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('../assets/city\ background.jpg');
     background-repeat: no-repeat;
     background-size: 1300px;
-}
-
-
-.card {
-    text-align: center;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    padding: 10px;
-    padding-bottom: 10px;
-    font-size: 15px
-  }
-
-footer {
-    text-align: center;
-    padding: 30px;
 }
