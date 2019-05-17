@@ -38,10 +38,13 @@ function showCart() {
 }
 
 function removeItemFromCart(event) {
-
   // TODO: When a delete link is clicked, use cart.removeItem to remove the correct item
+  var indexNumber = event.target.id;
+  cart.removeItem(indexNumber);
   // TODO: Save the cart back to local storage
+  cart.saveToLocalStorage();
   // TODO: Re-draw the cart table
+  cart.renderCart();
 
 }
 
